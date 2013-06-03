@@ -1,0 +1,80 @@
+
+#smmain{
+	position:fixed;
+	bottom: 20px !important;
+	width: 50px;
+	z-index: 1000;
+	text-align: center;
+	list-style: none;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+#smscroller{
+	cursor: pointer;
+}
+
+#smscroller-img{
+	width: 36px;
+	height: 36px;
+	border: 0px solid white;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/up_tr.png);
+	-webkit-transition-property: background-image;
+	-webkit-transition-duration:0.5s;
+	-webkit-transition-delay:0s;
+}
+
+#smscroller-img:hover{
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/up_hover.png);
+
+}
+
+
+#smright{
+	cursor: pointer;
+}
+
+#smright-img{
+	width: 36px;
+	height: 36px;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/right_tr.png);
+	-webkit-transition-property: background-image;
+	-webkit-transition-duration:0.5s;
+	-webkit-transition-delay:0s;
+}
+
+#smright-img:hover{
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/right_hover.png);
+}
+
+
+#smleft{
+	cursor: pointer;
+}
+
+#smleft-img{
+	width: 36px;
+	height: 36px;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/left_tr.png);
+	-webkit-transition-property: background-image;
+	-webkit-transition-duration:0.5s;
+	-webkit-transition-delay:0s;
+}
+
+#smleft-img:hover{
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/left_hover.png);
+}
+
+.smrightposition{
+	right:10px;
+}
+
+.smleftposition{
+	left:10px;
+}
+
+#smmain li{
+	padding: 5px !important;
+	margin: 0px !important;
+}
+

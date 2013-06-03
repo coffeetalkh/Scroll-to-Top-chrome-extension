@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Scroll to Top",
+  "description": "Scroll to Top",
+  "version": "1.0",
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
+  "content_scripts": [{"matches": ["<all_urls>"], "js": ["js/jquery.js", "js/script.js", "js/scroll.js"], "css": ["css/style.css"] }],
+  "web_accessible_resources": ["css/style.css", "img/up_tr.png", "img/up_hover_big.png", "img/left_tr.png", "img/right_hover.png", "img/up_hover.png", "img/left_hover.png", "img/right_tr.png", "img/icon.png", "img/transparent.png"],
+  "icons": {
+  	"16" : "img/icon.png",
+    "48" : "img/icon.png",
+    "128" :"img/icon.png"}
+  
+}
