@@ -8,9 +8,9 @@ $(document).ready(function() {
         _createObject();
     */
     function scroller(){
-        this.maxHeight = 450;
-        this.fadeSpeed = 500;
-        this.imgSrc = chrome.extension.getURL("img/transparent.png");
+        this.maxHeight = 450; //show scroller button after specific value.
+        this.fadeSpeed = 500; //object face speed.
+        this.imgSrc = chrome.extension.getURL("img/transparent.png"); //transparent atrribute for img object.
         this.obj = "";
 
         this.load = function() {
