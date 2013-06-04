@@ -13,12 +13,14 @@ $(document).ready(function() {
         this.imgSrc = chrome.extension.getURL("img/transparent.png"); //transparent atrribute for img object.
         this.obj = "";
 
+        //load important parts for loading plugin.
         this.load = function() {
             this.createElements();
             this.checkPosition();
             this.checkState();
         }
-
+        
+        //create html objects with specific id and atrributes.
         this.createElements = function() {
             this.createObject('ul', 'smmain', 'body', true);
             this.createObject('li', 'smscroller', '#smmain', true);
@@ -29,7 +31,8 @@ $(document).ready(function() {
             this.createObject('img', 'smleft-img', '#smleft', true);
 
         }
-
+        
+        //determine plugin position in page.
         this.checkPosition = function() {
             if ( localStorage.position == "left" ) {
                 $('#smmain').addClass('smleftposition');
@@ -38,7 +41,8 @@ $(document).ready(function() {
                 $('#smmain').addClass('smrightposition');
             }
         }
-
+        
+        //check plugin state, if window height value is bigger than maxHeight then show plugin.
         this.checkState = function() {
             if ( $(window).scrollTop() >= this.maxHeight  ) {
                 $('#smmain').fadeIn(this.fadeSpeed);
@@ -47,7 +51,8 @@ $(document).ready(function() {
                 $('#smmain').fadeOut(this.fadeSpeed);
             }
         }
-
+        
+        //create html objects
         this.createObject = function( ObjectName, idName, parent, showStatus ) {
             this.obj = document.createElement(ObjectName);
             this.obj.id = idName;
