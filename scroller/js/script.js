@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
-
+    /*scroller class, that contains:
+        _load();
+        _createElements();
+        _checkPosition();
+        _checkState();
+        _createObject();
+    */
     function scroller(){
         this.maxHeight = 450;
         this.fadeSpeed = 500;
