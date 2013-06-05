@@ -9,7 +9,7 @@ $(document).ready(function() {
     */
     function scroller(){
         this.maxHeight = 450; //show scroller button after specific value.
-        this.fadeSpeed = 500; //object face speed.
+        this.fadeSpeed = 500; //object fade speed.
         this.imgSrc = chrome.extension.getURL("img/transparent.png"); //transparent atrribute for img object.
         this.obj = "";
 
@@ -74,10 +74,10 @@ $(document).ready(function() {
     scroller.load();
 
 
-    //Events
+    //******************Events*******************
 
     $(window)._scrollable();
-
+    
     $('#smscroller').mouseover(function(){
         if ( $('#smmain').hasClass('smrightposition') ){
             $('#smright').fadeIn(300).slideDown(100);
