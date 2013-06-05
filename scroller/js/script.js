@@ -22,13 +22,13 @@ $(document).ready(function() {
         
         //create html objects with specific id and atrributes.
         this.createElements = function() {
-            this.createObject('ul', 'smmain', 'body', true);
-            this.createObject('li', 'smscroller', '#smmain', true);
-            this.createObject('img', 'smscroller-img', '#smscroller', true);
-            this.createObject('li', 'smright', '#smmain', false);
-            this.createObject('img', 'smright-img', '#smright', true);
-            this.createObject('li', 'smleft', '#smmain', false);
-            this.createObject('img', 'smleft-img', '#smleft', true);
+            this.createObject('ul', 'smmain', 'body', true); //plugin main form. 
+            this.createObject('li', 'smscroller', '#smmain', true); //scroll button element.
+            this.createObject('img', 'smscroller-img', '#smscroller', true); //scroll button image.
+            this.createObject('li', 'smright', '#smmain', false); //right button element.
+            this.createObject('img', 'smright-img', '#smright', true); //right button image.
+            this.createObject('li', 'smleft', '#smmain', false); //left button element.
+            this.createObject('img', 'smleft-img', '#smleft', true); //left button image.
 
         }
         
